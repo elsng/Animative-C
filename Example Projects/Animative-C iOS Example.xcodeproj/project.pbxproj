@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F209672818C4154400E3D832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F209672718C4154400E3D832 /* Foundation.framework */; };
+		F209672A18C4154400E3D832 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F209672918C4154400E3D832 /* CoreGraphics.framework */; };
+		F209672C18C4154400E3D832 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F209672B18C4154400E3D832 /* QuartzCore.framework */; };
+		F209672E18C4154400E3D832 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F209672D18C4154400E3D832 /* UIKit.framework */; };
+		F209673418C4154400E3D832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F209673318C4154400E3D832 /* main.m */; };
+		F209673A18C4154400E3D832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F209673918C4154400E3D832 /* AppDelegate.m */; };
+		F209673D18C4154400E3D832 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F209673C18C4154400E3D832 /* Images.xcassets */; };
+		F209673F18C4154400E3D832 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F209673E18C4154400E3D832 /* InfoPlist.strings */; };
+		F209674118C4154400E3D832 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = F209674018C4154400E3D832 /* iTunesArtwork */; };
+		F209674318C4154400E3D832 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = F209674218C4154400E3D832 /* iTunesArtwork@2x */; };
+		F209677718C417EC00E3D832 /* ENExamplesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F209677618C417EC00E3D832 /* ENExamplesListController.m */; };
+		F2B7EB7018C41C6B00FBDF90 /* libAnimative-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B7EB6A18C41BAA00FBDF90 /* libAnimative-C.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2B7EB6918C41BAA00FBDF90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B7EB6518C41BAA00FBDF90 /* Animative-C Static Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F24016D018C4127500F3D057;
+			remoteInfo = "Animative-C";
+		};
+		F2B7EB6E18C41C6900FBDF90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B7EB6518C41BAA00FBDF90 /* Animative-C Static Library.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F24016CF18C4127500F3D057;
+			remoteInfo = "Animative-C";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F209672418C4154400E3D832 /* Animative-C iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animative-C iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F209672718C4154400E3D832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F209672918C4154400E3D832 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F209672B18C4154400E3D832 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F209672D18C4154400E3D832 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F209673118C4154400E3D832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F209673218C4154400E3D832 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		F209673318C4154400E3D832 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F209673518C4154400E3D832 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
+		F209673818C4154400E3D832 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F209673918C4154400E3D832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F209673C18C4154400E3D832 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F209673E18C4154400E3D832 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F209674018C4154400E3D832 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		F209674218C4154400E3D832 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		F209677518C417EC00E3D832 /* ENExamplesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENExamplesListController.h; sourceTree = "<group>"; };
+		F209677618C417EC00E3D832 /* ENExamplesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENExamplesListController.m; sourceTree = "<group>"; };
+		F2B7EB6518C41BAA00FBDF90 /* Animative-C Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Animative-C Static Library.xcodeproj"; path = "../../Static Library Project/Animative-C Static Library.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F209672118C4154400E3D832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F209672818C4154400E3D832 /* Foundation.framework in Frameworks */,
+				F209672A18C4154400E3D832 /* CoreGraphics.framework in Frameworks */,
+				F209672C18C4154400E3D832 /* QuartzCore.framework in Frameworks */,
+				F209672E18C4154400E3D832 /* UIKit.framework in Frameworks */,
+				F2B7EB7018C41C6B00FBDF90 /* libAnimative-C.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F209671B18C4154400E3D832 = {
+			isa = PBXGroup;
+			children = (
+				F209672F18C4154400E3D832 /* Animative-C iOS Example */,
+				F209673618C4154400E3D832 /* Vendors */,
+				F209672618C4154400E3D832 /* Frameworks */,
+				F209672518C4154400E3D832 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F209672518C4154400E3D832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F209672418C4154400E3D832 /* Animative-C iOS Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F209672618C4154400E3D832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F209672718C4154400E3D832 /* Foundation.framework */,
+				F209672918C4154400E3D832 /* CoreGraphics.framework */,
+				F209672B18C4154400E3D832 /* QuartzCore.framework */,
+				F209672D18C4154400E3D832 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F209672F18C4154400E3D832 /* Animative-C iOS Example */ = {
+			isa = PBXGroup;
+			children = (
+				F209675B18C4154400E3D832 /* iPad */,
+				F209675318C4154400E3D832 /* iPhone */,
+				F209673718C4154400E3D832 /* Shared */,
+				F209673018C4154400E3D832 /* Supporting Files */,
+			);
+			path = "Animative-C iOS Example";
+			sourceTree = "<group>";
+		};
+		F209673018C4154400E3D832 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F209673218C4154400E3D832 /* Prefix.pch */,
+				F209673118C4154400E3D832 /* Info.plist */,
+				F209673318C4154400E3D832 /* main.m */,
+				F209673518C4154400E3D832 /* Entitlements.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F209673618C4154400E3D832 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				F2B7EB6518C41BAA00FBDF90 /* Animative-C Static Library.xcodeproj */,
+			);
+			name = Vendors;
+			path = "Animative-C iOS Example";
+			sourceTree = "<group>";
+		};
+		F209673718C4154400E3D832 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F209673818C4154400E3D832 /* AppDelegate.h */,
+				F209673918C4154400E3D832 /* AppDelegate.m */,
+				F209674718C4154400E3D832 /* Classes */,
+				F209674418C4154400E3D832 /* Views */,
+				F209673B18C4154400E3D832 /* Resources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F209673B18C4154400E3D832 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F209673C18C4154400E3D832 /* Images.xcassets */,
+				F209673E18C4154400E3D832 /* InfoPlist.strings */,
+				F209674018C4154400E3D832 /* iTunesArtwork */,
+				F209674218C4154400E3D832 /* iTunesArtwork@2x */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F209674418C4154400E3D832 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F209674618C4154400E3D832 /* Controllers */,
+				F209674518C4154400E3D832 /* Controls */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F209674518C4154400E3D832 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		F209674618C4154400E3D832 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F209674718C4154400E3D832 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F209675218C4154400E3D832 /* Common */,
+				F209675118C4154400E3D832 /* Controllers */,
+				F209674C18C4154400E3D832 /* Controls */,
+				F209674B18C4154400E3D832 /* Categories */,
+				F209674A18C4154400E3D832 /* Models */,
+				F209674918C4154400E3D832 /* Managers */,
+				F209674818C4154400E3D832 /* Services */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F209674818C4154400E3D832 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F209674918C4154400E3D832 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F209674A18C4154400E3D832 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F209674B18C4154400E3D832 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F209674C18C4154400E3D832 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F209674D18C4154400E3D832 /* Common */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		F209674D18C4154400E3D832 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F209675118C4154400E3D832 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F209677518C417EC00E3D832 /* ENExamplesListController.h */,
+				F209677618C417EC00E3D832 /* ENExamplesListController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F209675218C4154400E3D832 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F209675318C4154400E3D832 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				F209675818C4154400E3D832 /* Classes */,
+				F209675518C4154400E3D832 /* Views */,
+				F209675418C4154400E3D832 /* Resources */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		F209675418C4154400E3D832 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F209675518C4154400E3D832 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F209675618C4154400E3D832 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F209675618C4154400E3D832 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F209675718C4154400E3D832 /* Common */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F209675718C4154400E3D832 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F209675818C4154400E3D832 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F209675918C4154400E3D832 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F209675918C4154400E3D832 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F209675A18C4154400E3D832 /* Common */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F209675A18C4154400E3D832 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F209675B18C4154400E3D832 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				F209676018C4154400E3D832 /* Classes */,
+				F209675D18C4154400E3D832 /* Views */,
+				F209675C18C4154400E3D832 /* Resources */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		F209675C18C4154400E3D832 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F209675D18C4154400E3D832 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F209675E18C4154400E3D832 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F209675E18C4154400E3D832 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F209675F18C4154400E3D832 /* Common */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F209675F18C4154400E3D832 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F209676018C4154400E3D832 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F209676118C4154400E3D832 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F209676118C4154400E3D832 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F209676218C4154400E3D832 /* Common */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F209676218C4154400E3D832 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F2B7EB6618C41BAA00FBDF90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B7EB6A18C41BAA00FBDF90 /* libAnimative-C.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F209672318C4154400E3D832 /* Animative-C iOS Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F209676618C4154400E3D832 /* Build configuration list for PBXNativeTarget "Animative-C iOS Example" */;
+			buildPhases = (
+				F209672018C4154400E3D832 /* Sources */,
+				F209672118C4154400E3D832 /* Frameworks */,
+				F209672218C4154400E3D832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2B7EB6F18C41C6900FBDF90 /* PBXTargetDependency */,
+			);
+			name = "Animative-C iOS Example";
+			productName = "Animative-C iOS Example";
+			productReference = F209672418C4154400E3D832 /* Animative-C iOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F209671C18C4154400E3D832 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EN;
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = F209671F18C4154400E3D832 /* Build configuration list for PBXProject "Animative-C iOS Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F209671B18C4154400E3D832;
+			productRefGroup = F209672518C4154400E3D832 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F2B7EB6618C41BAA00FBDF90 /* Products */;
+					ProjectRef = F2B7EB6518C41BAA00FBDF90 /* Animative-C Static Library.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F209672318C4154400E3D832 /* Animative-C iOS Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F2B7EB6A18C41BAA00FBDF90 /* libAnimative-C.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libAnimative-C.a";
+			remoteRef = F2B7EB6918C41BAA00FBDF90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F209672218C4154400E3D832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F209674318C4154400E3D832 /* iTunesArtwork@2x in Resources */,
+				F209673D18C4154400E3D832 /* Images.xcassets in Resources */,
+				F209674118C4154400E3D832 /* iTunesArtwork in Resources */,
+				F209673F18C4154400E3D832 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F209672018C4154400E3D832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F209673A18C4154400E3D832 /* AppDelegate.m in Sources */,
+				F209673418C4154400E3D832 /* main.m in Sources */,
+				F209677718C417EC00E3D832 /* ENExamplesListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2B7EB6F18C41C6900FBDF90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Animative-C";
+			targetProxy = F2B7EB6E18C41C6900FBDF90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F209676318C4154400E3D832 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_IDENTIFIER = "com.elsieng.Animative-C-iOS-Example.adhoc";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Animative-C iOS Example/Supporting Files/Entitlements.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = AD_HOC;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		F209676418C4154400E3D832 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_IDENTIFIER = "com.elsieng.Animative-C-iOS-Example";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Animative-C iOS Example/Supporting Files/Entitlements.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = APP_STORE;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		F209676518C4154400E3D832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_IDENTIFIER = "com.elsieng.Animative-C-iOS-Example.debug";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Animative-C iOS Example/Supporting Files/Entitlements.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F209676718C4154400E3D832 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Ad_Hoc;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Animative-C iOS Example/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "Animative-C iOS Example/Supporting Files/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		F209676818C4154400E3D832 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Animative-C iOS Example/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "Animative-C iOS Example/Supporting Files/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "App Store";
+		};
+		F209676918C4154400E3D832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon_Debug;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Animative-C iOS Example/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "Animative-C iOS Example/Supporting Files/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F209671F18C4154400E3D832 /* Build configuration list for PBXProject "Animative-C iOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F209676318C4154400E3D832 /* Ad Hoc */,
+				F209676418C4154400E3D832 /* App Store */,
+				F209676518C4154400E3D832 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Ad Hoc";
+		};
+		F209676618C4154400E3D832 /* Build configuration list for PBXNativeTarget "Animative-C iOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F209676718C4154400E3D832 /* Ad Hoc */,
+				F209676818C4154400E3D832 /* App Store */,
+				F209676918C4154400E3D832 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Ad Hoc";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F209671C18C4154400E3D832 /* Project object */;
+}
