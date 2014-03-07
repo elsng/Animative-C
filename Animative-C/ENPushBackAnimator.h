@@ -1,3 +1,6 @@
+#import <Foundation/Foundation.h>
+
+
 #pragma mark Constants
 
 
@@ -6,10 +9,12 @@
 
 #pragma mark - Class Interface
 
-@interface ENObject : NSObject
+@interface ENPushBackAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 
 #pragma mark - Properties
+
+@property (nonatomic,assign) BOOL presenting;
 
 
 #pragma mark - Constructors

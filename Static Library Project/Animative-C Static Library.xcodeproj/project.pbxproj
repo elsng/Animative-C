@@ -10,8 +10,8 @@
 		F209677318C4170900E3D832 /* Animative-C.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2AD0A7A18C4140F00FF7D59 /* Animative-C.h */; };
 		F24016D418C4127500F3D057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24016D318C4127500F3D057 /* Foundation.framework */; };
 		F285BB4218C4136C0052DFAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F285BB4118C4136C0052DFAF /* UIKit.framework */; };
-		F2B7EB7418C41CE700FBDF90 /* ENObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B7EB7318C41CE700FBDF90 /* ENObject.m */; };
-		F2B7EB7518C41D1800FBDF90 /* ENObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2B7EB7218C41CE700FBDF90 /* ENObject.h */; };
+		F2A0720A18C7EE3300E6E30C /* ENPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */; };
+		F2A0720B18C7EE4D00E6E30C /* ENPushBackAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,7 +21,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				F2B7EB7518C41D1800FBDF90 /* ENObject.h in CopyFiles */,
+				F2A0720B18C7EE4D00E6E30C /* ENPushBackAnimator.h in CopyFiles */,
 				F209677318C4170900E3D832 /* Animative-C.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,9 +33,9 @@
 		F24016D318C4127500F3D057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F24016D718C4127500F3D057 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F285BB4118C4136C0052DFAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushBackAnimator.h; sourceTree = "<group>"; };
+		F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushBackAnimator.m; sourceTree = "<group>"; };
 		F2AD0A7A18C4140F00FF7D59 /* Animative-C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animative-C.h"; sourceTree = "<group>"; };
-		F2B7EB7218C41CE700FBDF90 /* ENObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENObject.h; sourceTree = "<group>"; };
-		F2B7EB7318C41CE700FBDF90 /* ENObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 		F2B7EB7118C41CD600FBDF90 /* Animative-C */ = {
 			isa = PBXGroup;
 			children = (
-				F2B7EB7218C41CE700FBDF90 /* ENObject.h */,
-				F2B7EB7318C41CE700FBDF90 /* ENObject.m */,
+				F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */,
+				F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */,
 			);
 			name = "Animative-C";
 			path = "../../Animative-C";
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B7EB7418C41CE700FBDF90 /* ENObject.m in Sources */,
+				F2A0720A18C7EE3300E6E30C /* ENPushBackAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

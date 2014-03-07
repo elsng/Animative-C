@@ -1,4 +1,5 @@
 #import "ENExamplesListController.h"
+#import "ENPushBackTransitionController.h"
 
 
 #pragma mark Constants
@@ -125,9 +126,8 @@
 - (void)_initializeExamplesListController
 {
     self.title = @"Examples";
+	
 }
-
-
 #pragma mark - UITableViewDataSource Methods
 
 - (NSInteger)tableView: (UITableView *)tableView 
@@ -143,7 +143,7 @@
 {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
-    cell.textLabel.text = @"Example Transition";
+    cell.textLabel.text = @"Push Back Transition";
 	
 	return cell;
 }
@@ -154,7 +154,8 @@
 - (void)tableView: (UITableView *)tableView 
 	didSelectRowAtIndexPath: (NSIndexPath *)indexPath
 {
-    
+    ENPushBackTransitionController *pushBackController = [ENPushBackTransitionController new];
+	[self.navigationController pushViewController:pushBackController animated:YES];
 }
 
 

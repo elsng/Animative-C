@@ -23,7 +23,7 @@
 	_mainWindow.backgroundColor = [UIColor blackColor];
     
     ENExamplesListController *listController = [ENExamplesListController new];
-    
+	
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:listController];
 	
     _mainWindow.rootViewController = navController;
