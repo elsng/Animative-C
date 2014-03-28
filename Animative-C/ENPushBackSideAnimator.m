@@ -1,4 +1,4 @@
-#import "ENPushBackAnimator.h"
+#import "ENPushBackSideAnimator.h"
 
 
 #pragma mark Constants
@@ -6,7 +6,7 @@
 
 #pragma mark - Class Extension
 
-@interface ENPushBackAnimator ()
+@interface ENPushBackSideAnimator ()
 
 @end
 
@@ -16,7 +16,7 @@
 
 #pragma mark - Class Definition
 
-@implementation ENPushBackAnimator
+@implementation ENPushBackSideAnimator
 {
 	UIView *_blackOverlay;
 }
@@ -76,9 +76,9 @@
 	   [transitionContext.containerView addSubview:toViewController.view];
 	   
 	   CGRect frame = toViewController.view.frame;
-	   frame.origin.y = [transitionContext containerView].bounds.size.height;
+	   frame.origin.x = [transitionContext containerView].bounds.size.width;
 	   toViewController.view.frame = frame;
-	   frame.origin.y = 0;
+	   frame.origin.x = fromViewController.view.frame.size.width/4;
 	   
        [UIView animateWithDuration:[self transitionDuration:transitionContext]
 				animations:^
@@ -111,7 +111,7 @@
 				{
 					_blackOverlay.backgroundColor = [UIColor clearColor];
 					CGRect frame = fromViewController.view.frame;
-					frame.origin.y = [transitionContext containerView].bounds.size.height;
+					frame.origin.x = [transitionContext containerView].bounds.size.width;
 					fromViewController.view.frame = frame;
 					
 					toViewController.view.transform = CGAffineTransformIdentity;

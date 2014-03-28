@@ -1,6 +1,6 @@
 #import "ENExamplesListController.h"
 #import "ENPushBackTransitionController.h"
-
+#import "ENPushBackSideTransitionController.h"
 
 #pragma mark Constants
 
@@ -133,7 +133,7 @@
 - (NSInteger)tableView: (UITableView *)tableView 
 	numberOfRowsInSection: (NSInteger)section
 {
-	NSInteger numberOfRows = 1;
+	NSInteger numberOfRows = 2;
 
 	return numberOfRows;
 }
@@ -145,6 +145,17 @@
     
     cell.textLabel.text = @"Push Back Transition";
 	
+	switch (indexPath.row)
+		{
+			case 0:
+				cell.textLabel.text = @"Push Back Transition";
+				break;
+				
+			case 1:
+				cell.textLabel.text = @"Push Back Side Transition";
+				break;
+		}
+	
 	return cell;
 }
 
@@ -155,7 +166,18 @@
 	didSelectRowAtIndexPath: (NSIndexPath *)indexPath
 {
     ENPushBackTransitionController *pushBackController = [ENPushBackTransitionController new];
-	[self.navigationController pushViewController:pushBackController animated:YES];
+	ENPushBackSideTransitionController *pushBackSideController = [ENPushBackSideTransitionController new];
+	
+	switch (indexPath.row)
+		{
+			case 0:
+				[self.navigationController pushViewController:pushBackController animated:YES];
+				break;
+				
+			case 1:
+				[self.navigationController pushViewController:pushBackSideController animated:YES];
+				break;
+		}
 }
 
 

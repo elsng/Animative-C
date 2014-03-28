@@ -10,6 +10,8 @@
 		F209677318C4170900E3D832 /* Animative-C.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2AD0A7A18C4140F00FF7D59 /* Animative-C.h */; };
 		F24016D418C4127500F3D057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24016D318C4127500F3D057 /* Foundation.framework */; };
 		F285BB4218C4136C0052DFAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F285BB4118C4136C0052DFAF /* UIKit.framework */; };
+		F29B7E0818DE25D200430E7E /* ENPushBackSideAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29B7E0718DE25D200430E7E /* ENPushBackSideAnimator.m */; };
+		F29B7E0918DE26A200430E7E /* ENPushBackSideAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F29B7E0618DE25D200430E7E /* ENPushBackSideAnimator.h */; };
 		F2A0720A18C7EE3300E6E30C /* ENPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */; };
 		F2A0720B18C7EE4D00E6E30C /* ENPushBackAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */; };
 /* End PBXBuildFile section */
@@ -21,6 +23,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				F29B7E0918DE26A200430E7E /* ENPushBackSideAnimator.h in CopyFiles */,
 				F2A0720B18C7EE4D00E6E30C /* ENPushBackAnimator.h in CopyFiles */,
 				F209677318C4170900E3D832 /* Animative-C.h in CopyFiles */,
 			);
@@ -33,6 +36,8 @@
 		F24016D318C4127500F3D057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F24016D718C4127500F3D057 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F285BB4118C4136C0052DFAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F29B7E0618DE25D200430E7E /* ENPushBackSideAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushBackSideAnimator.h; sourceTree = "<group>"; };
+		F29B7E0718DE25D200430E7E /* ENPushBackSideAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushBackSideAnimator.m; sourceTree = "<group>"; };
 		F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushBackAnimator.h; sourceTree = "<group>"; };
 		F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushBackAnimator.m; sourceTree = "<group>"; };
 		F2AD0A7A18C4140F00FF7D59 /* Animative-C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animative-C.h"; sourceTree = "<group>"; };
@@ -100,6 +105,8 @@
 			children = (
 				F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */,
 				F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */,
+				F29B7E0618DE25D200430E7E /* ENPushBackSideAnimator.h */,
+				F29B7E0718DE25D200430E7E /* ENPushBackSideAnimator.m */,
 			);
 			name = "Animative-C";
 			path = "../../Animative-C";
@@ -157,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2A0720A18C7EE3300E6E30C /* ENPushBackAnimator.m in Sources */,
+				F29B7E0818DE25D200430E7E /* ENPushBackSideAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
