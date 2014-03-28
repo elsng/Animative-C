@@ -1,2 +1,4 @@
 # Overview
-Transition animation library for Cbjective-C.
+Transition animation library for Objective-C.
+
+#Usage
