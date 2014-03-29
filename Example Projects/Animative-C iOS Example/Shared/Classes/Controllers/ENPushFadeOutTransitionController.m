@@ -169,12 +169,10 @@
 	UIViewController *viewController = [UIViewController new];
 	viewController.view.backgroundColor = [UIColor clearColor];
 	
-	CGFloat width = viewController.view.bounds.size.width - (viewController.view.bounds.size.width/4);
+	UIView *modalView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, viewController.view.bounds.size.width, viewController.view.bounds.size.height/3)];
+	modalView.backgroundColor = [UIColor whiteColor];
 	
-	UIView *sheetView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width, viewController.view.bounds.size.height)];
-	sheetView.backgroundColor = [UIColor whiteColor];
-	
-	[viewController.view addSubview:sheetView];
+	[viewController.view addSubview:modalView];
 	
 	UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	[closeButton setTitle:@"Dismiss" forState:UIControlStateNormal];
@@ -184,8 +182,8 @@
 	closeButton.backgroundColor = [UIColor redColor];
 	[closeButton addTarget:self action:@selector(_dismiss) forControlEvents:UIControlEventTouchUpInside];
 	
-	[sheetView addSubview:closeButton];
-	closeButton.center = [sheetView convertPoint:sheetView.center fromView:sheetView.superview];
+	[modalView addSubview:closeButton];
+	closeButton.center = [modalView convertPoint:modalView.center fromView:modalView.superview];
 
 	
 	viewController.transitioningDelegate = self;

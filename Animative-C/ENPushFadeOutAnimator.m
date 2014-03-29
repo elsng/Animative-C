@@ -76,15 +76,16 @@
 	   [transitionContext.containerView addSubview:toViewController.view];
 	   
 	   CGRect frame = toViewController.view.frame;
-	   frame.origin.x = [transitionContext containerView].bounds.size.width;
+	   frame.origin.y = [transitionContext containerView].bounds.size.height;
+	   frame.origin.x = [transitionContext containerView].bounds.size.width/2 - (fromViewController.view.frame.size.width/2);
 	   toViewController.view.frame = frame;
-	   frame.origin.x = fromViewController.view.frame.size.width/4;
+	   frame.origin.y = fromViewController.view.frame.size.height/3;
 	   
        [UIView animateWithDuration:[self transitionDuration:transitionContext]
 				animations:^
 				{
 					_blackOverlay.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5f];
-					fromViewController.view.transform = CGAffineTransformMakeScale(0.8f, 0.8f);
+					fromViewController.view.transform = CGAffineTransformMakeScale(0.01f, 0.01f);
 					fromViewController.view.tintAdjustmentMode = UIViewTintAdjustmentModeDimmed;
 					
 					toViewController.view.frame = frame;
@@ -97,7 +98,7 @@
    }
    
    else {
-		toViewController.view.transform = CGAffineTransformMakeScale(0.8f, 0.8f);
+		toViewController.view.transform = CGAffineTransformMakeScale(0.01f, 0.01f);
         toViewController.view.userInteractionEnabled = YES;
 	   
 	   _blackOverlay.frame = [transitionContext containerView].bounds;
@@ -111,7 +112,7 @@
 				{
 					_blackOverlay.backgroundColor = [UIColor clearColor];
 					CGRect frame = fromViewController.view.frame;
-					frame.origin.x = [transitionContext containerView].bounds.size.width;
+					frame.origin.y = [transitionContext containerView].bounds.size.height;
 					fromViewController.view.frame = frame;
 					
 					toViewController.view.transform = CGAffineTransformIdentity;
