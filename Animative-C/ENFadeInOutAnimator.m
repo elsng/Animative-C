@@ -1,4 +1,4 @@
-#import "ENPushFadeOutAnimator.h"
+#import "ENFadeInOutAnimator.h"
 
 
 #pragma mark Constants
@@ -6,7 +6,7 @@
 
 #pragma mark - Class Extension
 
-@interface ENPushFadeOutAnimator ()
+@interface ENFadeInOutAnimator ()
 
 @end
 
@@ -16,11 +16,7 @@
 
 #pragma mark - Class Definition
 
-@implementation ENPushFadeOutAnimator
-{
-	UIView *_blackOverlay;
-}
-
+@implementation ENFadeInOutAnimator
 
 #pragma mark - Properties
 
@@ -36,7 +32,6 @@
 	}
 	
 	// Initialize instance variables.
-	_blackOverlay = [UIView new];
 	
 	// Return initialized instance.
 	
@@ -67,28 +62,20 @@
    if (_presenting)
    {
        fromViewController.view.userInteractionEnabled = NO;
-       
-	   _blackOverlay.frame = [transitionContext containerView].bounds;
-	   _blackOverlay.backgroundColor = [UIColor clearColor];
 	   
        [transitionContext.containerView addSubview:fromViewController.view];
-       [transitionContext.containerView addSubview:_blackOverlay];
 	   [transitionContext.containerView addSubview:toViewController.view];
 	   
 	   CGRect frame = toViewController.view.frame;
-	   frame.origin.y = [transitionContext containerView].bounds.size.height;
-	   frame.origin.x = [transitionContext containerView].bounds.size.width/2 - (fromViewController.view.frame.size.width/2);
 	   toViewController.view.frame = frame;
-	   frame.origin.y = fromViewController.view.frame.size.height/3;
+	   frame.origin.y = 0;
+	   toViewController.view.alpha = 0.f;
 	   
        [UIView animateWithDuration:[self transitionDuration:transitionContext]
 				animations:^
 				{
-					_blackOverlay.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5f];
-					fromViewController.view.transform = CGAffineTransformMakeScale(0.01f, 0.01f);
-					fromViewController.view.alpha = 0.f;
 					fromViewController.view.tintAdjustmentMode = UIViewTintAdjustmentModeDimmed;
-					
+					toViewController.view.alpha = 1.f;
 					toViewController.view.frame = frame;
 				}
 				completion:^(BOOL finished)
@@ -99,29 +86,21 @@
    }
    
    else {
-		toViewController.view.transform = CGAffineTransformMakeScale(0.01f, 0.01f);
         toViewController.view.userInteractionEnabled = YES;
-	   
-	   _blackOverlay.frame = [transitionContext containerView].bounds;
-	   
+	    fromViewController.view.alpha = 1.f;
 		[transitionContext.containerView addSubview:toViewController.view];
-		[transitionContext.containerView addSubview:_blackOverlay];
 		[transitionContext.containerView addSubview:fromViewController.view];
        
        [UIView animateWithDuration:[self transitionDuration:transitionContext]
 				animations:^
 				{
-					_blackOverlay.backgroundColor = [UIColor clearColor];
 					CGRect frame = fromViewController.view.frame;
-					frame.origin.y = [transitionContext containerView].bounds.size.height;
 					fromViewController.view.frame = frame;
-					
-					toViewController.view.transform = CGAffineTransformIdentity;
-					toViewController.view.alpha = 1.f;
-					toViewController.view.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
+					fromViewController.view.alpha = 0.f;
 				}
 				completion:^(BOOL finished)
 				{
+					toViewController.view.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
 					[transitionContext completeTransition:YES];
 				}
 	   ];

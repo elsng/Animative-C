@@ -2,6 +2,7 @@
 #import "ENPushBackTransitionController.h"
 #import "ENPushBackSideTransitionController.h"
 #import "ENPushFadeOutTransitionController.h"
+#import "ENFadeInOutTransitionController.h"
 
 #pragma mark Constants
 
@@ -134,7 +135,7 @@
 - (NSInteger)tableView: (UITableView *)tableView 
 	numberOfRowsInSection: (NSInteger)section
 {
-	NSInteger numberOfRows = 3;
+	NSInteger numberOfRows = 4;
 
 	return numberOfRows;
 }
@@ -144,8 +145,6 @@
 {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
-    cell.textLabel.text = @"Push Back Transition";
-	
 	switch (indexPath.row)
 		{
 			case 0:
@@ -157,6 +156,9 @@
 				break;
 			case 2:
 				cell.textLabel.text = @"Push Fade Out Transition";
+				break;
+			case 3:
+				cell.textLabel.text = @"Fade In Out Transition";
 				break;
 		}
 	
@@ -172,6 +174,7 @@
     ENPushBackTransitionController *pushBackController = [ENPushBackTransitionController new];
 	ENPushBackSideTransitionController *pushBackSideController = [ENPushBackSideTransitionController new];
 	ENPushFadeOutTransitionController *pushFadeOutController = [ENPushFadeOutTransitionController new];
+	ENFadeInOutTransitionController *fadeInOutController = [ENFadeInOutTransitionController new];
 	
 	switch (indexPath.row)
 		{
@@ -185,6 +188,10 @@
 				
 			case 2:
 				[self.navigationController pushViewController:pushFadeOutController animated:YES];
+				break;
+				
+			case 3:
+				[self.navigationController pushViewController:fadeInOutController animated:YES];
 				break;
 		}
 }
