@@ -1,4 +1,4 @@
-#import "ENPushBackAnimator.h"
-#import "ENPushBackSideAnimator.h"
-#import "ENPushFadeOutAnimator.h"
+#import "ENModalSheetPushBackAnimator.h"
+#import "ENModalSheetRightPushBackAnimator.h"
+#import "ENModalWindowScaleFadeOutAnimator.h"
 #import "ENFadeInOutAnimator.h"

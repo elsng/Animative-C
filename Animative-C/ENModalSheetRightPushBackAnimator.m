@@ -1,4 +1,4 @@
-#import "ENPushBackSideAnimator.h"
+#import "ENModalSheetRightPushBackAnimator.h"
 
 
 #pragma mark Constants
@@ -6,7 +6,7 @@
 
 #pragma mark - Class Extension
 
-@interface ENPushBackSideAnimator ()
+@interface ENModalSheetRightPushBackAnimator ()
 
 @end
 
@@ -16,7 +16,7 @@
 
 #pragma mark - Class Definition
 
-@implementation ENPushBackSideAnimator
+@implementation ENModalSheetRightPushBackAnimator
 {
 	UIView *_blackOverlay;
 }

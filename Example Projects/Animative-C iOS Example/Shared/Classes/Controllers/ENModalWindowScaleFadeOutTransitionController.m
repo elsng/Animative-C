@@ -1,15 +1,15 @@
-#import "ENPushBackSideTransitionController.h"
+#import "ENModalWindowScaleFadeOutTransitionController.h"
 
 #pragma mark Constants
 
 
 #pragma mark - Class Extension
 
-@interface ENPushBackSideTransitionController ()
+@interface ENModalWindowScaleFadeOutTransitionController ()
 
 @property (nonatomic, retain) IBOutlet UIView *sampleOutlet;
 
-- (void)_initializePushBackSideTransitionController;
+- (void)_initializeModalWindowScaleFadeOutTransitionController;
 
 - (void)_buttonPressed;
 
@@ -22,9 +22,9 @@
 
 #pragma mark - Class Definition
 
-@implementation ENPushBackSideTransitionController
+@implementation ENModalWindowScaleFadeOutTransitionController
 {
-	ENPushBackSideAnimator *_pushBackSideAnimator;
+	ENModalWindowScaleFadeOutAnimator *_pushFadeOutAnimator;
 }
 
 #pragma mark - Properties
@@ -58,7 +58,7 @@
 	}
 	
 	// Initialize view.
-	[self _initializePushBackTransitionController];
+	[self _initializeModalWindowScaleFadeOutTransitionController];
 	
 	// Return initialized instance.
 	return self;
@@ -73,7 +73,7 @@
 	}
 	
 	// Initialize view.
-	[self _initializePushBackSideTransitionController];
+	[self _initializeModalWindowScaleFadeOutTransitionController];
 	
 	// Return initialized instance.
 	return self;
@@ -158,10 +158,10 @@
 
 #pragma mark - Private Methods
 
-- (void)_initializePushBackTransitionController
+- (void)_initializeModalWindowScaleFadeOutTransitionController
 {
 	self.title = @"Push Back Side Transition";
-	_pushBackSideAnimator = [ENPushBackSideAnimator new];
+	_pushFadeOutAnimator = [ENModalWindowScaleFadeOutAnimator new];
 }
 
 - (void)_buttonPressed
@@ -169,12 +169,10 @@
 	UIViewController *viewController = [UIViewController new];
 	viewController.view.backgroundColor = [UIColor clearColor];
 	
-	CGFloat width = viewController.view.bounds.size.width - (viewController.view.bounds.size.width/4);
+	UIView *modalView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, viewController.view.bounds.size.width, viewController.view.bounds.size.height/3)];
+	modalView.backgroundColor = [UIColor whiteColor];
 	
-	UIView *sheetView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width, viewController.view.bounds.size.height)];
-	sheetView.backgroundColor = [UIColor whiteColor];
-	
-	[viewController.view addSubview:sheetView];
+	[viewController.view addSubview:modalView];
 	
 	UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	[closeButton setTitle:@"Dismiss" forState:UIControlStateNormal];
@@ -184,8 +182,8 @@
 	closeButton.backgroundColor = [UIColor redColor];
 	[closeButton addTarget:self action:@selector(_dismiss) forControlEvents:UIControlEventTouchUpInside];
 	
-	[sheetView addSubview:closeButton];
-	closeButton.center = [sheetView convertPoint:sheetView.center fromView:sheetView.superview];
+	[modalView addSubview:closeButton];
+	closeButton.center = [modalView convertPoint:modalView.center fromView:modalView.superview];
 
 	
 	viewController.transitioningDelegate = self;
@@ -203,13 +201,13 @@
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-	_pushBackSideAnimator.presenting = YES;
-	return _pushBackSideAnimator;
+	_pushFadeOutAnimator.presenting = YES;
+	return _pushFadeOutAnimator;
 }
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-	_pushBackSideAnimator.presenting = NO;
-	return _pushBackSideAnimator;
+	_pushFadeOutAnimator.presenting = NO;
+	return _pushFadeOutAnimator;
 }
 
 

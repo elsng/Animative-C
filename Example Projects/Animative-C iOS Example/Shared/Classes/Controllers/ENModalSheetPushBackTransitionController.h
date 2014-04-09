@@ -6,7 +6,7 @@
 
 #pragma mark - Class Interface
 
-@interface ENPushBackTransitionController : UIViewController <UIViewControllerTransitioningDelegate>
+@interface ENModalSheetPushBackTransitionController : UIViewController <UIViewControllerTransitioningDelegate>
 
 
 #pragma mark - Properties

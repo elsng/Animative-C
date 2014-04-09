@@ -1,15 +1,15 @@
-#import "ENPushFadeOutTransitionController.h"
+#import "ENModalSheetPushBackTransitionController.h"
 
 #pragma mark Constants
 
 
 #pragma mark - Class Extension
 
-@interface ENPushFadeOutTransitionController ()
+@interface ENModalSheetPushBackTransitionController ()
 
 @property (nonatomic, retain) IBOutlet UIView *sampleOutlet;
 
-- (void)_initializePushFadeOutTransitionController;
+- (void)_initializePushBackTransitionController;
 
 - (void)_buttonPressed;
 
@@ -22,9 +22,9 @@
 
 #pragma mark - Class Definition
 
-@implementation ENPushFadeOutTransitionController
+@implementation ENModalSheetPushBackTransitionController
 {
-	ENPushFadeOutAnimator *_pushFadeOutAnimator;
+	ENModalSheetPushBackAnimator *_pushBackAnimator;
 }
 
 #pragma mark - Properties
@@ -73,7 +73,7 @@
 	}
 	
 	// Initialize view.
-	[self _initializePushFadeOutTransitionController];
+	[self _initializePushBackTransitionController];
 	
 	// Return initialized instance.
 	return self;
@@ -160,8 +160,8 @@
 
 - (void)_initializePushBackTransitionController
 {
-	self.title = @"Push Back Side Transition";
-	_pushFadeOutAnimator = [ENPushFadeOutAnimator new];
+	self.title = @"Push Back Transition";
+	_pushBackAnimator = [ENModalSheetPushBackAnimator new];
 }
 
 - (void)_buttonPressed
@@ -169,10 +169,12 @@
 	UIViewController *viewController = [UIViewController new];
 	viewController.view.backgroundColor = [UIColor clearColor];
 	
-	UIView *modalView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, viewController.view.bounds.size.width, viewController.view.bounds.size.height/3)];
-	modalView.backgroundColor = [UIColor whiteColor];
+	CGFloat height = viewController.view.bounds.size.height/2;
 	
-	[viewController.view addSubview:modalView];
+	UIView *sheetView = [[UIView alloc]initWithFrame:CGRectMake(0, height, viewController.view.bounds.size.width, height)];
+	sheetView.backgroundColor = [UIColor whiteColor];
+	
+	[viewController.view addSubview:sheetView];
 	
 	UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	[closeButton setTitle:@"Dismiss" forState:UIControlStateNormal];
@@ -182,8 +184,8 @@
 	closeButton.backgroundColor = [UIColor redColor];
 	[closeButton addTarget:self action:@selector(_dismiss) forControlEvents:UIControlEventTouchUpInside];
 	
-	[modalView addSubview:closeButton];
-	closeButton.center = [modalView convertPoint:modalView.center fromView:modalView.superview];
+	[sheetView addSubview:closeButton];
+	closeButton.center = [sheetView convertPoint:sheetView.center fromView:sheetView.superview];
 
 	
 	viewController.transitioningDelegate = self;
@@ -201,13 +203,13 @@
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-	_pushFadeOutAnimator.presenting = YES;
-	return _pushFadeOutAnimator;
+	_pushBackAnimator.presenting = YES;
+	return _pushBackAnimator;
 }
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-	_pushFadeOutAnimator.presenting = NO;
-	return _pushFadeOutAnimator;
+	_pushBackAnimator.presenting = NO;
+	return _pushBackAnimator;
 }
 
 

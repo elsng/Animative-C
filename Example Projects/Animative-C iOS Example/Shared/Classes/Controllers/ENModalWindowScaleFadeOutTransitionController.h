@@ -1,6 +1,3 @@
-#import <Foundation/Foundation.h>
-
-
 #pragma mark Constants
 
 
@@ -9,13 +6,15 @@
 
 #pragma mark - Class Interface
 
-@interface ENPushFadeOutAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface ENModalWindowScaleFadeOutTransitionController : UIViewController <UIViewControllerTransitioningDelegate>
 
 
 #pragma mark - Properties
-@property (nonatomic,assign) BOOL presenting;
+
 
 #pragma mark - Constructors
+
+- (id)initWithDefaultNibName;
 
 
 #pragma mark - Static Methods

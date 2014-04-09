@@ -1,7 +1,7 @@
 #import "ENExamplesListController.h"
-#import "ENPushBackTransitionController.h"
-#import "ENPushBackSideTransitionController.h"
-#import "ENPushFadeOutTransitionController.h"
+#import "ENModalSheetPushBackTransitionController.h"
+#import "ENModalSheetRightPushBackTransitionController.h"
+#import "ENModalWindowScaleFadeOutTransitionController.h"
 #import "ENFadeInOutTransitionController.h"
 
 #pragma mark Constants
@@ -132,10 +132,46 @@
 }
 #pragma mark - UITableViewDataSource Methods
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+	return 2;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+	
+    NSString *title = nil;
+    
+    switch (section)
+    {
+        case 0:
+            title = @"Page Transitions";
+            break;
+            
+        case 1:
+            title = @"Modal Transitions";
+            break;
+    }
+	
+    return title;
+}
+
 - (NSInteger)tableView: (UITableView *)tableView 
 	numberOfRowsInSection: (NSInteger)section
 {
-	NSInteger numberOfRows = 4;
+	NSInteger numberOfRows = 0;
+	
+	switch (section)
+	{
+		//PAGE TRANSITIONS
+		case 0:
+			numberOfRows = 1;
+			break;
+		
+		//MODAL TRANSITIONS
+		case 1:
+			numberOfRows = 3;
+			break;
+	}
 
 	return numberOfRows;
 }
@@ -145,22 +181,34 @@
 {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
-	switch (indexPath.row)
-		{
-			case 0:
-				cell.textLabel.text = @"Push Back Transition";
-				break;
-				
-			case 1:
-				cell.textLabel.text = @"Push Back Side Transition";
-				break;
-			case 2:
-				cell.textLabel.text = @"Push Fade Out Transition";
-				break;
-			case 3:
-				cell.textLabel.text = @"Fade In Out Transition";
-				break;
-		}
+	switch (indexPath.section)
+	{
+		//PAGE TRANSITIONS
+		case 0:
+			switch (indexPath.row)
+				{
+					case 0:
+						cell.textLabel.text = @"Fade In Out";
+						break;
+				}
+			break;
+			
+		//MODAL TRANSITIONS
+		case 1:
+			switch (indexPath.row)
+				{
+					case 0:
+						cell.textLabel.text = @"Sheet Push Back (Bottom)";
+						break;
+					case 1:
+						cell.textLabel.text = @"Sheet Push Back (Right)";
+						break;
+					case 2:
+						cell.textLabel.text = @"Modal Window Scale Out (Bottom)";
+						break;
+				}
+			break;
+	}
 	
 	return cell;
 }
@@ -171,29 +219,43 @@
 - (void)tableView: (UITableView *)tableView 
 	didSelectRowAtIndexPath: (NSIndexPath *)indexPath
 {
-    ENPushBackTransitionController *pushBackController = [ENPushBackTransitionController new];
-	ENPushBackSideTransitionController *pushBackSideController = [ENPushBackSideTransitionController new];
-	ENPushFadeOutTransitionController *pushFadeOutController = [ENPushFadeOutTransitionController new];
+    ENModalSheetPushBackTransitionController *modalSheetPushBackController = [ENModalSheetPushBackTransitionController new];
+	ENModalSheetRightPushBackTransitionController *modalSheetRightPushBackController = [ENModalSheetRightPushBackTransitionController new];
+	ENModalWindowScaleFadeOutTransitionController *modalWindowScaleFadeOutController = [ENModalWindowScaleFadeOutTransitionController new];
 	ENFadeInOutTransitionController *fadeInOutController = [ENFadeInOutTransitionController new];
 	
-	switch (indexPath.row)
-		{
-			case 0:
-				[self.navigationController pushViewController:pushBackController animated:YES];
-				break;
+	switch (indexPath.section)
+	{
+		//PAGE TRANSITIONS
+		case 0:
+			switch (indexPath.row)
+			{
+				case 0:
+					[self.navigationController pushViewController:fadeInOutController animated:YES];
+					break;
 				
-			case 1:
-				[self.navigationController pushViewController:pushBackSideController animated:YES];
-				break;
+			}
+			break;
+		
+		//MODAL TRANSITIONS
+		case 1:
+			switch (indexPath.row)
+			{
 				
-			case 2:
-				[self.navigationController pushViewController:pushFadeOutController animated:YES];
-				break;
+				case 0:
+					[self.navigationController pushViewController:modalSheetPushBackController animated:YES];
+					break;
 				
-			case 3:
-				[self.navigationController pushViewController:fadeInOutController animated:YES];
-				break;
-		}
+				case 1:
+					[self.navigationController pushViewController:modalSheetRightPushBackController animated:YES];
+					break;
+				
+				case 2:
+					[self.navigationController pushViewController:modalWindowScaleFadeOutController animated:YES];
+					break;
+			}
+			break;
+	}
 }
 
 

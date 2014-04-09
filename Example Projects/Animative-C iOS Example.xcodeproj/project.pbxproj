@@ -18,11 +18,11 @@
 		F209674118C4154400E3D832 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = F209674018C4154400E3D832 /* iTunesArtwork */; };
 		F209674318C4154400E3D832 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = F209674218C4154400E3D832 /* iTunesArtwork@2x */; };
 		F209677718C417EC00E3D832 /* ENExamplesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F209677618C417EC00E3D832 /* ENExamplesListController.m */; };
-		F23399AF18DE127C00707714 /* ENPushBackSideTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23399AE18DE127C00707714 /* ENPushBackSideTransitionController.m */; };
+		F23399AF18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23399AE18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m */; };
 		F27CC40118EC9C8200A0119F /* ENFadeInOutTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27CC40018EC9C8200A0119F /* ENFadeInOutTransitionController.m */; };
-		F2A0720E18C9518100E6E30C /* ENPushBackTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A0720D18C9518100E6E30C /* ENPushBackTransitionController.m */; };
+		F2A0720E18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A0720D18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m */; };
 		F2B7EB7018C41C6B00FBDF90 /* libAnimative-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B7EB6A18C41BAA00FBDF90 /* libAnimative-C.a */; };
-		F2DA0A2418E5065000A27D7E /* ENPushFadeOutTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0A2318E5065000A27D7E /* ENPushFadeOutTransitionController.m */; };
+		F2DA0A2418E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0A2318E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,15 +60,15 @@
 		F209674218C4154400E3D832 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		F209677518C417EC00E3D832 /* ENExamplesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENExamplesListController.h; sourceTree = "<group>"; };
 		F209677618C417EC00E3D832 /* ENExamplesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENExamplesListController.m; sourceTree = "<group>"; };
-		F23399AD18DE127C00707714 /* ENPushBackSideTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushBackSideTransitionController.h; sourceTree = "<group>"; };
-		F23399AE18DE127C00707714 /* ENPushBackSideTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushBackSideTransitionController.m; sourceTree = "<group>"; };
+		F23399AD18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalSheetRightPushBackTransitionController.h; sourceTree = "<group>"; };
+		F23399AE18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalSheetRightPushBackTransitionController.m; sourceTree = "<group>"; };
 		F27CC3FF18EC9C8200A0119F /* ENFadeInOutTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENFadeInOutTransitionController.h; sourceTree = "<group>"; };
 		F27CC40018EC9C8200A0119F /* ENFadeInOutTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFadeInOutTransitionController.m; sourceTree = "<group>"; };
-		F2A0720C18C9518100E6E30C /* ENPushBackTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushBackTransitionController.h; sourceTree = "<group>"; };
-		F2A0720D18C9518100E6E30C /* ENPushBackTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushBackTransitionController.m; sourceTree = "<group>"; };
+		F2A0720C18C9518100E6E30C /* ENModalSheetPushBackTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalSheetPushBackTransitionController.h; sourceTree = "<group>"; };
+		F2A0720D18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalSheetPushBackTransitionController.m; sourceTree = "<group>"; };
 		F2B7EB6518C41BAA00FBDF90 /* Animative-C Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Animative-C Static Library.xcodeproj"; path = "../../Static Library Project/Animative-C Static Library.xcodeproj"; sourceTree = "<group>"; };
-		F2DA0A2218E5065000A27D7E /* ENPushFadeOutTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushFadeOutTransitionController.h; sourceTree = "<group>"; };
-		F2DA0A2318E5065000A27D7E /* ENPushFadeOutTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushFadeOutTransitionController.m; sourceTree = "<group>"; };
+		F2DA0A2218E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalWindowScaleFadeOutTransitionController.h; sourceTree = "<group>"; };
+		F2DA0A2318E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalWindowScaleFadeOutTransitionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,12 +255,12 @@
 			children = (
 				F209677518C417EC00E3D832 /* ENExamplesListController.h */,
 				F209677618C417EC00E3D832 /* ENExamplesListController.m */,
-				F2A0720C18C9518100E6E30C /* ENPushBackTransitionController.h */,
-				F2A0720D18C9518100E6E30C /* ENPushBackTransitionController.m */,
-				F23399AD18DE127C00707714 /* ENPushBackSideTransitionController.h */,
-				F23399AE18DE127C00707714 /* ENPushBackSideTransitionController.m */,
-				F2DA0A2218E5065000A27D7E /* ENPushFadeOutTransitionController.h */,
-				F2DA0A2318E5065000A27D7E /* ENPushFadeOutTransitionController.m */,
+				F2A0720C18C9518100E6E30C /* ENModalSheetPushBackTransitionController.h */,
+				F2A0720D18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m */,
+				F23399AD18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.h */,
+				F23399AE18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m */,
+				F2DA0A2218E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.h */,
+				F2DA0A2318E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m */,
 				F27CC3FF18EC9C8200A0119F /* ENFadeInOutTransitionController.h */,
 				F27CC40018EC9C8200A0119F /* ENFadeInOutTransitionController.m */,
 			);
@@ -490,11 +490,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A0720E18C9518100E6E30C /* ENPushBackTransitionController.m in Sources */,
+				F2A0720E18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m in Sources */,
 				F209673A18C4154400E3D832 /* AppDelegate.m in Sources */,
 				F27CC40118EC9C8200A0119F /* ENFadeInOutTransitionController.m in Sources */,
-				F23399AF18DE127C00707714 /* ENPushBackSideTransitionController.m in Sources */,
-				F2DA0A2418E5065000A27D7E /* ENPushFadeOutTransitionController.m in Sources */,
+				F23399AF18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m in Sources */,
+				F2DA0A2418E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m in Sources */,
 				F209673418C4154400E3D832 /* main.m in Sources */,
 				F209677718C417EC00E3D832 /* ENExamplesListController.m in Sources */,
 			);

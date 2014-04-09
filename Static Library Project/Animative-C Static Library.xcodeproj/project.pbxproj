@@ -12,12 +12,12 @@
 		F27CC3FA18EC976800A0119F /* ENFadeInOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F27CC3F918EC976800A0119F /* ENFadeInOutAnimator.m */; };
 		F27CC3FB18EC98A500A0119F /* ENFadeInOutAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F27CC3F818EC976800A0119F /* ENFadeInOutAnimator.h */; };
 		F285BB4218C4136C0052DFAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F285BB4118C4136C0052DFAF /* UIKit.framework */; };
-		F29B7E0818DE25D200430E7E /* ENPushBackSideAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29B7E0718DE25D200430E7E /* ENPushBackSideAnimator.m */; };
-		F29B7E0918DE26A200430E7E /* ENPushBackSideAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F29B7E0618DE25D200430E7E /* ENPushBackSideAnimator.h */; };
-		F2A0720A18C7EE3300E6E30C /* ENPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */; };
-		F2A0720B18C7EE4D00E6E30C /* ENPushBackAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */; };
-		F2DA0A2718E5072600A27D7E /* ENPushFadeOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0A2618E5072600A27D7E /* ENPushFadeOutAnimator.m */; };
-		F2DA0A2818E5079C00A27D7E /* ENPushFadeOutAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DA0A2518E5072600A27D7E /* ENPushFadeOutAnimator.h */; };
+		F29B7E0818DE25D200430E7E /* ENModalSheetRightPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F29B7E0718DE25D200430E7E /* ENModalSheetRightPushBackAnimator.m */; };
+		F29B7E0918DE26A200430E7E /* ENModalSheetRightPushBackAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F29B7E0618DE25D200430E7E /* ENModalSheetRightPushBackAnimator.h */; };
+		F2A0720A18C7EE3300E6E30C /* ENModalSheetPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A0720918C7EE3300E6E30C /* ENModalSheetPushBackAnimator.m */; };
+		F2A0720B18C7EE4D00E6E30C /* ENModalSheetPushBackAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A0720818C7EE3300E6E30C /* ENModalSheetPushBackAnimator.h */; };
+		F2DA0A2718E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0A2618E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m */; };
+		F2DA0A2818E5079C00A27D7E /* ENModalWindowScaleFadeOutAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DA0A2518E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +28,9 @@
 			dstSubfolderSpec = 16;
 			files = (
 				F27CC3FB18EC98A500A0119F /* ENFadeInOutAnimator.h in CopyFiles */,
-				F2DA0A2818E5079C00A27D7E /* ENPushFadeOutAnimator.h in CopyFiles */,
-				F29B7E0918DE26A200430E7E /* ENPushBackSideAnimator.h in CopyFiles */,
-				F2A0720B18C7EE4D00E6E30C /* ENPushBackAnimator.h in CopyFiles */,
+				F2DA0A2818E5079C00A27D7E /* ENModalWindowScaleFadeOutAnimator.h in CopyFiles */,
+				F29B7E0918DE26A200430E7E /* ENModalSheetRightPushBackAnimator.h in CopyFiles */,
+				F2A0720B18C7EE4D00E6E30C /* ENModalSheetPushBackAnimator.h in CopyFiles */,
 				F209677318C4170900E3D832 /* Animative-C.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,13 +44,13 @@
 		F27CC3F818EC976800A0119F /* ENFadeInOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENFadeInOutAnimator.h; sourceTree = "<group>"; };
 		F27CC3F918EC976800A0119F /* ENFadeInOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFadeInOutAnimator.m; sourceTree = "<group>"; };
 		F285BB4118C4136C0052DFAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F29B7E0618DE25D200430E7E /* ENPushBackSideAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushBackSideAnimator.h; sourceTree = "<group>"; };
-		F29B7E0718DE25D200430E7E /* ENPushBackSideAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushBackSideAnimator.m; sourceTree = "<group>"; };
-		F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushBackAnimator.h; sourceTree = "<group>"; };
-		F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushBackAnimator.m; sourceTree = "<group>"; };
+		F29B7E0618DE25D200430E7E /* ENModalSheetRightPushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalSheetRightPushBackAnimator.h; sourceTree = "<group>"; };
+		F29B7E0718DE25D200430E7E /* ENModalSheetRightPushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalSheetRightPushBackAnimator.m; sourceTree = "<group>"; };
+		F2A0720818C7EE3300E6E30C /* ENModalSheetPushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalSheetPushBackAnimator.h; sourceTree = "<group>"; };
+		F2A0720918C7EE3300E6E30C /* ENModalSheetPushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalSheetPushBackAnimator.m; sourceTree = "<group>"; };
 		F2AD0A7A18C4140F00FF7D59 /* Animative-C.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animative-C.h"; sourceTree = "<group>"; };
-		F2DA0A2518E5072600A27D7E /* ENPushFadeOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPushFadeOutAnimator.h; sourceTree = "<group>"; };
-		F2DA0A2618E5072600A27D7E /* ENPushFadeOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPushFadeOutAnimator.m; sourceTree = "<group>"; };
+		F2DA0A2518E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalWindowScaleFadeOutAnimator.h; sourceTree = "<group>"; };
+		F2DA0A2618E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalWindowScaleFadeOutAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +113,12 @@
 		F2B7EB7118C41CD600FBDF90 /* Animative-C */ = {
 			isa = PBXGroup;
 			children = (
-				F2A0720818C7EE3300E6E30C /* ENPushBackAnimator.h */,
-				F2A0720918C7EE3300E6E30C /* ENPushBackAnimator.m */,
-				F29B7E0618DE25D200430E7E /* ENPushBackSideAnimator.h */,
-				F29B7E0718DE25D200430E7E /* ENPushBackSideAnimator.m */,
-				F2DA0A2518E5072600A27D7E /* ENPushFadeOutAnimator.h */,
-				F2DA0A2618E5072600A27D7E /* ENPushFadeOutAnimator.m */,
+				F2A0720818C7EE3300E6E30C /* ENModalSheetPushBackAnimator.h */,
+				F2A0720918C7EE3300E6E30C /* ENModalSheetPushBackAnimator.m */,
+				F29B7E0618DE25D200430E7E /* ENModalSheetRightPushBackAnimator.h */,
+				F29B7E0718DE25D200430E7E /* ENModalSheetRightPushBackAnimator.m */,
+				F2DA0A2518E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.h */,
+				F2DA0A2618E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m */,
 				F27CC3F818EC976800A0119F /* ENFadeInOutAnimator.h */,
 				F27CC3F918EC976800A0119F /* ENFadeInOutAnimator.m */,
 			);
@@ -177,10 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2DA0A2718E5072600A27D7E /* ENPushFadeOutAnimator.m in Sources */,
+				F2DA0A2718E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m in Sources */,
 				F27CC3FA18EC976800A0119F /* ENFadeInOutAnimator.m in Sources */,
-				F2A0720A18C7EE3300E6E30C /* ENPushBackAnimator.m in Sources */,
-				F29B7E0818DE25D200430E7E /* ENPushBackSideAnimator.m in Sources */,
+				F2A0720A18C7EE3300E6E30C /* ENModalSheetPushBackAnimator.m in Sources */,
+				F29B7E0818DE25D200430E7E /* ENModalSheetRightPushBackAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,4 @@
-#import "ENPushFadeOutAnimator.h"
+#import "ENModalWindowScaleFadeOutAnimator.h"
 
 
 #pragma mark Constants
@@ -6,7 +6,7 @@
 
 #pragma mark - Class Extension
 
-@interface ENPushFadeOutAnimator ()
+@interface ENModalWindowScaleFadeOutAnimator ()
 
 @end
 
@@ -16,7 +16,7 @@
 
 #pragma mark - Class Definition
 
-@implementation ENPushFadeOutAnimator
+@implementation ENModalWindowScaleFadeOutAnimator
 {
 	UIView *_blackOverlay;
 }

@@ -1,15 +1,15 @@
-#import "ENPushBackTransitionController.h"
+#import "ENModalSheetRightPushBackTransitionController.h"
 
 #pragma mark Constants
 
 
 #pragma mark - Class Extension
 
-@interface ENPushBackTransitionController ()
+@interface ENModalSheetRightPushBackTransitionController ()
 
 @property (nonatomic, retain) IBOutlet UIView *sampleOutlet;
 
-- (void)_initializePushBackTransitionController;
+- (void)_initializeModalSheetRightPushBackTransitionController;
 
 - (void)_buttonPressed;
 
@@ -22,9 +22,9 @@
 
 #pragma mark - Class Definition
 
-@implementation ENPushBackTransitionController
+@implementation ENModalSheetRightPushBackTransitionController
 {
-	ENPushBackAnimator *_pushBackAnimator;
+	ENModalSheetRightPushBackAnimator *_pushBackSideAnimator;
 }
 
 #pragma mark - Properties
@@ -58,7 +58,7 @@
 	}
 	
 	// Initialize view.
-	[self _initializePushBackTransitionController];
+	[self _initializeModalSheetRightPushBackTransitionController];
 	
 	// Return initialized instance.
 	return self;
@@ -73,7 +73,7 @@
 	}
 	
 	// Initialize view.
-	[self _initializePushBackTransitionController];
+	[self _initializeModalSheetRightPushBackTransitionController];
 	
 	// Return initialized instance.
 	return self;
@@ -158,10 +158,10 @@
 
 #pragma mark - Private Methods
 
-- (void)_initializePushBackTransitionController
+- (void)_initializeModalSheetRightPushBackTransitionController
 {
-	self.title = @"Push Back Transition";
-	_pushBackAnimator = [ENPushBackAnimator new];
+	self.title = @"Push Back Side Transition";
+	_pushBackSideAnimator = [ENModalSheetRightPushBackAnimator new];
 }
 
 - (void)_buttonPressed
@@ -169,9 +169,9 @@
 	UIViewController *viewController = [UIViewController new];
 	viewController.view.backgroundColor = [UIColor clearColor];
 	
-	CGFloat height = viewController.view.bounds.size.height/2;
+	CGFloat width = viewController.view.bounds.size.width - (viewController.view.bounds.size.width/4);
 	
-	UIView *sheetView = [[UIView alloc]initWithFrame:CGRectMake(0, height, viewController.view.bounds.size.width, height)];
+	UIView *sheetView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width, viewController.view.bounds.size.height)];
 	sheetView.backgroundColor = [UIColor whiteColor];
 	
 	[viewController.view addSubview:sheetView];
@@ -203,13 +203,13 @@
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-	_pushBackAnimator.presenting = YES;
-	return _pushBackAnimator;
+	_pushBackSideAnimator.presenting = YES;
+	return _pushBackSideAnimator;
 }
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-	_pushBackAnimator.presenting = NO;
-	return _pushBackAnimator;
+	_pushBackSideAnimator.presenting = NO;
+	return _pushBackSideAnimator;
 }
 
 

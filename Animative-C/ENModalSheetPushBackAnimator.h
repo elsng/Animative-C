@@ -9,7 +9,7 @@
 
 #pragma mark - Class Interface
 
-@interface ENPushBackAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface ENModalSheetPushBackAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 
 #pragma mark - Properties

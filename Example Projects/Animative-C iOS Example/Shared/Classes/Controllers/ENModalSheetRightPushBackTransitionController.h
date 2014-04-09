@@ -6,7 +6,7 @@
 
 #pragma mark - Class Interface
 
-@interface ENPushFadeOutTransitionController : UIViewController <UIViewControllerTransitioningDelegate>
+@interface ENModalSheetRightPushBackTransitionController : UIViewController <UIViewControllerTransitioningDelegate>
 
 
 #pragma mark - Properties
