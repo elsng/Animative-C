@@ -3,6 +3,7 @@
 #import "ENModalSheetRightPushBackTransitionController.h"
 #import "ENModalWindowScaleFadeOutTransitionController.h"
 #import "ENFadeInOutTransitionController.h"
+#import "ENFadeOutSlideInRightTransitionController.h"
 
 #pragma mark Constants
 
@@ -164,7 +165,7 @@
 	{
 		//PAGE TRANSITIONS
 		case 0:
-			numberOfRows = 1;
+			numberOfRows = 2;
 			break;
 		
 		//MODAL TRANSITIONS
@@ -189,6 +190,9 @@
 				{
 					case 0:
 						cell.textLabel.text = @"Fade In Out";
+						break;
+					case 1:
+						cell.textLabel.text = @"Fade Out Slide In (Right)";
 						break;
 				}
 			break;
@@ -223,6 +227,7 @@
 	ENModalSheetRightPushBackTransitionController *modalSheetRightPushBackController = [ENModalSheetRightPushBackTransitionController new];
 	ENModalWindowScaleFadeOutTransitionController *modalWindowScaleFadeOutController = [ENModalWindowScaleFadeOutTransitionController new];
 	ENFadeInOutTransitionController *fadeInOutController = [ENFadeInOutTransitionController new];
+	ENFadeOutSlideInRightTransitionController *fadeOutSlideInRightController = [ENFadeOutSlideInRightTransitionController new];
 	
 	switch (indexPath.section)
 	{
@@ -232,6 +237,10 @@
 			{
 				case 0:
 					[self.navigationController pushViewController:fadeInOutController animated:YES];
+					break;
+					
+				case 1:
+					[self.navigationController pushViewController:fadeOutSlideInRightController animated:YES];
 					break;
 				
 			}
