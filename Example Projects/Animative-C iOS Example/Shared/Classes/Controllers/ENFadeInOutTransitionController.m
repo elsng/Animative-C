@@ -160,7 +160,7 @@
 
 - (void)_initializeFadeInOutTransitionController
 {
-	self.title = @"Push Back Transition";
+	self.title = @"Transition";
 	_fadeInOutAnimator = [ENFadeInOutAnimator new];
 }
 

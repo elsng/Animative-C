@@ -21,6 +21,7 @@
 		F23399AF18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23399AE18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m */; };
 		F27CC40118EC9C8200A0119F /* ENFadeInOutTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27CC40018EC9C8200A0119F /* ENFadeInOutTransitionController.m */; };
 		F2A0720E18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A0720D18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m */; };
+		F2B0C75A18FDFBF600320236 /* ENModalWindowSlideUpBottomTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B0C75918FDFBF600320236 /* ENModalWindowSlideUpBottomTransitionController.m */; };
 		F2B7EB7018C41C6B00FBDF90 /* libAnimative-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B7EB6A18C41BAA00FBDF90 /* libAnimative-C.a */; };
 		F2C3168418F4EE29006BE20D /* ENFadeOutSlideInRightTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C3168318F4EE29006BE20D /* ENFadeOutSlideInRightTransitionController.m */; };
 		F2DA0A2418E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0A2318E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m */; };
@@ -67,6 +68,8 @@
 		F27CC40018EC9C8200A0119F /* ENFadeInOutTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFadeInOutTransitionController.m; sourceTree = "<group>"; };
 		F2A0720C18C9518100E6E30C /* ENModalSheetPushBackTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalSheetPushBackTransitionController.h; sourceTree = "<group>"; };
 		F2A0720D18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalSheetPushBackTransitionController.m; sourceTree = "<group>"; };
+		F2B0C75818FDFBF600320236 /* ENModalWindowSlideUpBottomTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalWindowSlideUpBottomTransitionController.h; sourceTree = "<group>"; };
+		F2B0C75918FDFBF600320236 /* ENModalWindowSlideUpBottomTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalWindowSlideUpBottomTransitionController.m; sourceTree = "<group>"; };
 		F2B7EB6518C41BAA00FBDF90 /* Animative-C Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Animative-C Static Library.xcodeproj"; path = "../../Static Library Project/Animative-C Static Library.xcodeproj"; sourceTree = "<group>"; };
 		F2C3168218F4EE29006BE20D /* ENFadeOutSlideInRightTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENFadeOutSlideInRightTransitionController.h; sourceTree = "<group>"; };
 		F2C3168318F4EE29006BE20D /* ENFadeOutSlideInRightTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFadeOutSlideInRightTransitionController.m; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				F27CC40018EC9C8200A0119F /* ENFadeInOutTransitionController.m */,
 				F2C3168218F4EE29006BE20D /* ENFadeOutSlideInRightTransitionController.h */,
 				F2C3168318F4EE29006BE20D /* ENFadeOutSlideInRightTransitionController.m */,
+				F2B0C75818FDFBF600320236 /* ENModalWindowSlideUpBottomTransitionController.h */,
+				F2B0C75918FDFBF600320236 /* ENModalWindowSlideUpBottomTransitionController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 			files = (
 				F2A0720E18C9518100E6E30C /* ENModalSheetPushBackTransitionController.m in Sources */,
 				F209673A18C4154400E3D832 /* AppDelegate.m in Sources */,
+				F2B0C75A18FDFBF600320236 /* ENModalWindowSlideUpBottomTransitionController.m in Sources */,
 				F27CC40118EC9C8200A0119F /* ENFadeInOutTransitionController.m in Sources */,
 				F23399AF18DE127C00707714 /* ENModalSheetRightPushBackTransitionController.m in Sources */,
 				F2DA0A2418E5065000A27D7E /* ENModalWindowScaleFadeOutTransitionController.m in Sources */,

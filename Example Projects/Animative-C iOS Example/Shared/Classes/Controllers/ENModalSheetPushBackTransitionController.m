@@ -160,7 +160,7 @@
 
 - (void)_initializePushBackTransitionController
 {
-	self.title = @"Push Back Transition";
+	self.title = @"Transition";
 	_pushBackAnimator = [ENModalSheetPushBackAnimator new];
 }
 

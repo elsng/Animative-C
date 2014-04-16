@@ -1,15 +1,15 @@
-#import "ENModalWindowScaleFadeOutTransitionController.h"
+#import "ENModalWindowSlideUpBottomTransitionController.h"
 
 #pragma mark Constants
 
 
 #pragma mark - Class Extension
 
-@interface ENModalWindowScaleFadeOutTransitionController ()
+@interface ENModalWindowSlideUpBottomTransitionController ()
 
 @property (nonatomic, retain) IBOutlet UIView *sampleOutlet;
 
-- (void)_initializeModalWindowScaleFadeOutTransitionController;
+- (void)_initializeModalWindowSlideUpBottomTransitionController;
 
 - (void)_buttonPressed;
 
@@ -22,9 +22,9 @@
 
 #pragma mark - Class Definition
 
-@implementation ENModalWindowScaleFadeOutTransitionController
+@implementation ENModalWindowSlideUpBottomTransitionController
 {
-	ENModalWindowScaleFadeOutAnimator *_pushFadeOutAnimator;
+	ENModalWindowSlideUpBottomAnimator *_slideUpBottomAnimator;
 }
 
 #pragma mark - Properties
@@ -58,7 +58,7 @@
 	}
 	
 	// Initialize view.
-	[self _initializeModalWindowScaleFadeOutTransitionController];
+	[self _initializeModalWindowSlideUpBottomTransitionController];
 	
 	// Return initialized instance.
 	return self;
@@ -73,7 +73,7 @@
 	}
 	
 	// Initialize view.
-	[self _initializeModalWindowScaleFadeOutTransitionController];
+	[self _initializeModalWindowSlideUpBottomTransitionController];
 	
 	// Return initialized instance.
 	return self;
@@ -158,10 +158,10 @@
 
 #pragma mark - Private Methods
 
-- (void)_initializeModalWindowScaleFadeOutTransitionController
+- (void)_initializeModalWindowSlideUpBottomTransitionController
 {
 	self.title = @"Transition";
-	_pushFadeOutAnimator = [ENModalWindowScaleFadeOutAnimator new];
+	_slideUpBottomAnimator = [ENModalWindowSlideUpBottomAnimator new];
 }
 
 - (void)_buttonPressed
@@ -169,7 +169,10 @@
 	UIViewController *viewController = [UIViewController new];
 	viewController.view.backgroundColor = [UIColor clearColor];
 	
-	UIView *modalView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, viewController.view.bounds.size.width, viewController.view.bounds.size.height/3)];
+	CGFloat width = 300;
+	CGFloat height = 150;
+	
+	UIView *modalView = [[UIView alloc]initWithFrame:CGRectMake(viewController.view.bounds.size.width/2 - width/2, viewController.view.bounds.size.height/2 - height/2, width, height)];
 	modalView.backgroundColor = [UIColor whiteColor];
 	
 	[viewController.view addSubview:modalView];
@@ -201,13 +204,13 @@
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-	_pushFadeOutAnimator.presenting = YES;
-	return _pushFadeOutAnimator;
+	_slideUpBottomAnimator.presenting = YES;
+	return _slideUpBottomAnimator;
 }
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-	_pushFadeOutAnimator.presenting = NO;
-	return _pushFadeOutAnimator;
+	_slideUpBottomAnimator.presenting = NO;
+	return _slideUpBottomAnimator;
 }
 
 

@@ -160,7 +160,7 @@
 
 - (void)_initializeFadeOutSlideInRightTransitionController
 {
-	self.title = @"Push Back Transition";
+	self.title = @"Transition";
 	_fadeOutSlideInRightAnimator = [ENFadeOutSlideInRightAnimator new];
 }
 

@@ -4,6 +4,7 @@
 #import "ENModalWindowScaleFadeOutTransitionController.h"
 #import "ENFadeInOutTransitionController.h"
 #import "ENFadeOutSlideInRightTransitionController.h"
+#import "ENModalWindowSlideUpBottomTransitionController.h"
 
 #pragma mark Constants
 
@@ -170,7 +171,7 @@
 		
 		//MODAL TRANSITIONS
 		case 1:
-			numberOfRows = 3;
+			numberOfRows = 4;
 			break;
 	}
 
@@ -210,6 +211,9 @@
 					case 2:
 						cell.textLabel.text = @"Modal Window Scale Out (Bottom)";
 						break;
+					case 3:
+						cell.textLabel.text = @"Modal Window Slide Up (Bottom)";
+						break;
 				}
 			break;
 	}
@@ -228,6 +232,7 @@
 	ENModalWindowScaleFadeOutTransitionController *modalWindowScaleFadeOutController = [ENModalWindowScaleFadeOutTransitionController new];
 	ENFadeInOutTransitionController *fadeInOutController = [ENFadeInOutTransitionController new];
 	ENFadeOutSlideInRightTransitionController *fadeOutSlideInRightController = [ENFadeOutSlideInRightTransitionController new];
+	ENModalWindowSlideUpBottomTransitionController *modalWindowSlideUpBottomController = [ENModalWindowSlideUpBottomTransitionController new];
 	
 	switch (indexPath.section)
 	{
@@ -261,6 +266,10 @@
 				
 				case 2:
 					[self.navigationController pushViewController:modalWindowScaleFadeOutController animated:YES];
+					break;
+					
+				case 3:
+					[self.navigationController pushViewController:modalWindowSlideUpBottomController animated:YES];
 					break;
 			}
 			break;
