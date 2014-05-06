@@ -4,3 +4,4 @@
 #import "ENModalSheetRightPushBackAnimator.h"
 #import "ENModalWindowScaleFadeOutAnimator.h"
 #import "ENModalWindowSlideUpBottomAnimator.h"
+#import "ENModalWindowScaleFadeInAnimator.h"

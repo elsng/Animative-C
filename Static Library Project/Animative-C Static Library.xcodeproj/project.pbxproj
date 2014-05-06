@@ -22,6 +22,8 @@
 		F2C3168118F4EDD8006BE20D /* ENFadeOutSlideInRightAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2C3167E18F4DDAF006BE20D /* ENFadeOutSlideInRightAnimator.h */; };
 		F2DA0A2718E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DA0A2618E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m */; };
 		F2DA0A2818E5079C00A27D7E /* ENModalWindowScaleFadeOutAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DA0A2518E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.h */; };
+		F2EDC685191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EDC684191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.m */; };
+		F2EDC689191861AA0034CBF2 /* ENModalWindowScaleFadeInAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EDC683191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				F2EDC689191861AA0034CBF2 /* ENModalWindowScaleFadeInAnimator.h in CopyFiles */,
 				F2B0C75B18FDFCEE00320236 /* ENModalWindowSlideUpBottomAnimator.h in CopyFiles */,
 				F2C3168118F4EDD8006BE20D /* ENFadeOutSlideInRightAnimator.h in CopyFiles */,
 				F27CC3FB18EC98A500A0119F /* ENFadeInOutAnimator.h in CopyFiles */,
@@ -61,6 +64,8 @@
 		F2C3167F18F4DDAF006BE20D /* ENFadeOutSlideInRightAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFadeOutSlideInRightAnimator.m; sourceTree = "<group>"; };
 		F2DA0A2518E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalWindowScaleFadeOutAnimator.h; sourceTree = "<group>"; };
 		F2DA0A2618E5072600A27D7E /* ENModalWindowScaleFadeOutAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalWindowScaleFadeOutAnimator.m; sourceTree = "<group>"; };
+		F2EDC683191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENModalWindowScaleFadeInAnimator.h; sourceTree = "<group>"; };
+		F2EDC684191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENModalWindowScaleFadeInAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +140,8 @@
 				F2C3167F18F4DDAF006BE20D /* ENFadeOutSlideInRightAnimator.m */,
 				F2B0C75518FDFBD900320236 /* ENModalWindowSlideUpBottomAnimator.h */,
 				F2B0C75618FDFBD900320236 /* ENModalWindowSlideUpBottomAnimator.m */,
+				F2EDC683191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.h */,
+				F2EDC684191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.m */,
 			);
 			name = "Animative-C";
 			path = "../../Animative-C";
@@ -197,6 +204,7 @@
 				F2A0720A18C7EE3300E6E30C /* ENModalSheetPushBackAnimator.m in Sources */,
 				F29B7E0818DE25D200430E7E /* ENModalSheetRightPushBackAnimator.m in Sources */,
 				F2B0C75718FDFBD900320236 /* ENModalWindowSlideUpBottomAnimator.m in Sources */,
+				F2EDC685191853770034CBF2 /* ENModalWindowScaleFadeInAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
